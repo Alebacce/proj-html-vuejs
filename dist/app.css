@@ -1,0 +1,428 @@
+/* COLORS */
+/* SIZES */
+/* FONT SIZES */
+/* LAYOUT */
+/* ANIMATIONS */
+/* ---- RESET ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* ---- COMMON ---- */
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.small-container {
+  width: 40%;
+  margin: auto;
+}
+
+.selected {
+  color: #69bf14;
+}
+
+i {
+  color: #ffffff;
+}
+
+.i-margin-right {
+  margin-right: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #1975c0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 10px 25px;
+  border-radius: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: transform 0.2s;
+}
+.btn:hover {
+  transform: scale(1.2);
+}
+
+h2 {
+  color: #69bf14;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+p {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+a {
+  cursor: pointer;
+}
+
+section {
+  padding: 100px 0;
+  text-align: center;
+}
+section span {
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #afaeae;
+}
+section h2 {
+  padding: 30px 0;
+  padding-top: 20px;
+}
+section p {
+  padding-bottom: 30px;
+  color: #6b6b6b;
+}
+
+.fixed-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #262727;
+  width: 40px;
+  height: 30px;
+  font-size: 13px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  position: fixed;
+  bottom: 0;
+  right: 5%;
+  cursor: pointer;
+}
+.fixed-item:hover {
+  background-color: #4c4e4e;
+}
+
+.header-up {
+  padding: 10px;
+  background-color: #69bf14;
+  color: #ffffff;
+}
+.header-up .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-up .call {
+  font-size: 12px;
+}
+.header-up .social-ul li {
+  display: inline-block;
+  margin-left: 15px;
+  transition: transform 0.2s;
+}
+.header-up .social-ul li .social-i {
+  font-size: 13px;
+}
+.header-up .social-ul li:hover {
+  transform: scale(1.4);
+}
+
+.header-down {
+  padding-top: 15px;
+  height: 620px;
+  background-image: url("../img/avada-movers-homeherobackground-final.jpg");
+  background-size: 125%;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 17%;
+}
+.header-down .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-down .logo {
+  max-width: 150px;
+}
+.header-down ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+.header-down ul li:first-child a {
+  color: #69bf14;
+}
+.header-down ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 13px;
+}
+.header-down ul li a:hover {
+  color: #69bf14;
+}
+.header-down ul li a.btn {
+  color: #ffffff;
+}
+.header-down .motto-container {
+  height: calc(100% - 69px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-down .motto {
+  text-transform: uppercase;
+  text-align: center;
+  color: #262727;
+}
+.header-down .motto h1 {
+  font-size: 50px;
+  font-weight: 900;
+  padding: 20px;
+}
+.header-down .motto div {
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #6b6b6b;
+}
+
+.call-to-action {
+  background-color: #1975c0;
+  padding: 50px 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.call-to-action:hover {
+  background-color: #3f9be6;
+}
+
+.flex-col-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F7FAFB;
+}
+
+.small-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-row h3 {
+  color: #1975c0;
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+
+.square-row .col-inner {
+  border: 15px solid #F2F5F8;
+}
+.square-row .img-box {
+  border-bottom: 15px solid #F2F5F8;
+}
+
+.col-gutter {
+  padding: 20px;
+}
+
+.col-text {
+  padding: 15px;
+}
+
+.small-jumbotron {
+  height: 600px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("../img/avada-movers-movewithease-background-new.jpg");
+  background-size: cover;
+}
+.small-jumbotron .absolute-square {
+  width: 30%;
+  background-color: #69bf14;
+  border: 15px solid #5AA511;
+  padding: 25px;
+  margin-right: 17%;
+}
+.small-jumbotron .absolute-square .square-intro {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+}
+.small-jumbotron .absolute-square .square-intro span {
+  color: #ffffff;
+}
+.small-jumbotron .absolute-square .square-intro h2 {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+}
+.small-jumbotron .absolute-square p {
+  padding-top: 20px;
+  color: #ffffff;
+}
+.small-jumbotron .absolute-square .btn {
+  font-size: 14px;
+}
+
+#testimonials {
+  background-image: url("../img/avada-movers-testimonial-background.jpg");
+  background-size: cover;
+}
+
+.circle-row .img-box {
+  margin: auto;
+  min-width: 100px;
+  max-width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+.circle-row .img-box img {
+  height: 100%;
+  border-radius: 50%;
+}
+
+#free-quote {
+  background-image: url("../img/avada-movers-request-quote-background.jpg");
+  border-bottom: 15px solid #69bf14;
+}
+
+footer {
+  padding-top: 50px;
+}
+footer .container {
+  display: flex;
+  padding-bottom: 50px;
+}
+footer .container h3 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #262727;
+  font-weight: 800;
+  font-size: 15px;
+}
+footer .container .left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+footer .container .left p {
+  padding-bottom: 35px;
+}
+footer .container .left .logo {
+  max-width: 150px;
+}
+footer .container .right {
+  flex-grow: 1;
+  display: flex;
+  padding-left: 50px;
+}
+footer .container .right .footer-menu-list {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-right: 180px;
+}
+footer .container .right .footer-menu-list:first-child li:first-child a,
+footer .container .right .footer-menu-list:first-child li:first-child i {
+  color: #69bf14;
+}
+footer .container .right .footer-menu-list:last-child {
+  margin-right: 0;
+}
+footer .container .right ul li {
+  margin-bottom: 20px;
+}
+footer .container .right ul li:hover a,
+footer .container .right ul li:hover i {
+  color: #69bf14;
+}
+footer .container .right ul li i {
+  font-size: 9px;
+  color: black;
+  margin-right: 3px;
+}
+footer .container .right ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+
+.copy-legal {
+  text-align: center;
+  background-color: #69bf14;
+  padding-bottom: 30px;
+}
+.copy-legal ul {
+  padding-top: 30px;
+}
+.copy-legal ul li {
+  display: inline-block;
+}
+.copy-legal ul li a {
+  text-decoration: none;
+  color: black;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 0 15px;
+  border-left: 1px solid #ffffff;
+}
+.copy-legal ul li a:hover {
+  text-decoration: underline;
+}
+.copy-legal ul li:first-child a {
+  border-left: none;
+}
+.copy-legal .social-i {
+  display: inline-block;
+  padding: 0;
+  margin-left: 15px;
+  transition: transform 0.2s;
+  border-left: none;
+  font-size: 14px;
+}
+.copy-legal .social-i:hover {
+  transform: scale(1.4);
+}
+.copy-legal .social-ul {
+  padding-top: 17px;
+}
+.copy-legal .social-ul li:first-child .social-i {
+  margin-left: 0;
+}

@@ -1,0 +1,95 @@
+.header-up {
+    padding: 10px;
+    background-color: $primary_color;
+    color: $white_color;
+
+    .container {
+        @include space-between-align-center;
+    }
+
+    .call {
+        font-size: $ultra_small_text;
+    }
+
+    .social-ul li {
+        display: inline-block;
+        margin-left: $a_spacing;
+        transition: transform .2s;
+
+        .social-i {
+            font-size: $social_i_font_header;
+        }
+
+        &:hover {
+            transform: scale($social_scale);
+        }
+    }
+}
+
+.header-down {
+    padding-top: 15px;
+    height: 620px;
+    background-image: url('../img/avada-movers-homeherobackground-final.jpg');
+    background-size: 125%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 17%;
+    
+    // position: relative;
+
+    .container {
+        @include space-between-align-center;
+    }
+
+    .logo {
+        max-width: $logo-width;
+    }
+
+    ul li {
+        display: inline-block;
+        margin-left: 30px;
+        &:first-child {
+            a {
+                color: $primary_color;
+            }
+        }
+
+        a {
+            @include a_style;
+            font-weight: $f_weight_btn;
+            font-size: $small-text;
+            &:hover {
+                color: $primary_color;
+            }
+            &.btn {
+                color: $white_color;
+            }
+        }
+    }
+
+    .motto-container {
+        height: calc(100% - 69px);
+        @include flex-row-center;
+    }
+
+    .motto {
+        text-transform: uppercase;
+        text-align: center;
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        color: $black_color;
+
+        h1 {
+            font-size: $h1;
+            font-weight: $f_weight_h1;
+            padding: $padding_20;
+        }
+
+        div {
+            @include fat_text;
+            color: $dark_gray;
+        }
+    }
+}

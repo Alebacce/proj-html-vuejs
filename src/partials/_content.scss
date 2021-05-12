@@ -1,0 +1,123 @@
+.call-to-action {
+    background-color: $secondary_color;
+    padding: 50px 0;
+    text-align: center;
+    color: $white_color;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: lighten($color: $secondary_color, $amount: 15%)
+    }
+}
+
+.flex-col-section {
+    @include flex-col-center;
+    background-color: $ultra_light_gray;
+}
+
+.small-container {
+    @include flex-col-center;
+}
+
+.flex-row {
+    @include flex-row;
+
+    h3 {
+        color: $secondary_color;
+        padding-bottom: 15px;
+        font-size: $h3;
+    }
+}
+
+.square-row {
+    .col-inner {
+    border: $thick_gray_border;
+}
+
+    .img-box {
+        border-bottom: $thick_gray_border;
+    }
+}
+
+.col-gutter {
+    padding: 20px;
+}
+
+.col-text {
+    padding: 15px;
+}
+
+.small-jumbotron {
+    height: $small_jumbotron_height;
+    @include just-flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url('../img/avada-movers-movewithease-background-new.jpg');
+    background-size: cover;
+
+        .absolute-square {
+            width: 30%;
+            background-color: $primary_color;
+            border: $thick_green_border;
+            padding: 25px;
+            margin-right: 17%;
+            
+
+            // position: absolute;
+            // top: 50%;
+            // left: 53%;
+            // transform: translateY(-50%);
+
+            .square-intro {
+                width: max-content;
+                margin:  auto;
+                
+                span {
+                    color: $white_color;
+                }
+
+                h2 {
+                    padding-top: 10px;
+                    padding-bottom: $padding_20;
+                    border-bottom: 1px solid $white_color;
+                    color: $white_color;
+                }
+            }
+
+            p {
+                padding-top: $padding_20;
+                color: $white_color;
+            }
+
+            .btn {
+                font-size: $standard_text;
+            }
+        }
+}
+
+#testimonials {
+    background-image: url('../img/avada-movers-testimonial-background.jpg');
+    background-size: cover;
+}
+
+.circle-row {
+    .img-box {
+        margin: auto;
+        min-width: 100px;
+        max-width: 100px;
+        height: 100px;
+        margin-bottom: 15px;
+
+        img {
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+}
+
+#free-quote {
+    background-image: url('../img/avada-movers-request-quote-background.jpg');
+    border-bottom: $thick_primary_border;
+}

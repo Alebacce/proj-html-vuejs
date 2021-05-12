@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- AOS CSS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts: Roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="dist/app.css">
+    <title>Avada: Movers</title>
+</head>
+
+<body>
+    <div id="root">
+        <!-- HEADER -->
+        <header>
+            <!-- Upper Header -->
+            <div class="header-up">
+                <div class="container">
+                    <!-- Call us -->
+                    <div class="call">
+                        <span class="i-margin-right">
+                            <i class="fas fa-phone"></i>
+                        </span>
+                        <span>Call us for a Free Quote: 1.800.555.6789
+                        </span>
+                    </div>
+
+                    <!-- Social -->
+                    <ul class="social-ul">
+                        <li v-for="social in socials">
+                            <a class="social-i" 
+                            :href="social.link"
+                            v-html="social.icon"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- END Upper Header -->
+
+            <!-- Down Header -->
+            <div class="header-down">
+                <div class="container">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <img src="img/avada-movers-retinalogo.png" alt="Avada Movers logo">
+                    </div>
+
+                    <!-- Menu -->
+                    <nav>
+                        <ul>
+                            <li v-for="item in headerMenu">
+                                <a href="#">
+                                    {{item}}
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn" href="#">
+                                    {{headerMenuBtn}}
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="motto-container">
+                    <!-- Motto in absolute -->
+                    <div class="motto" 
+                    data-aos="fade-down" 
+                    data-aos-once="true">
+                        <div>
+                            Moving without the hassle
+                        </div>
+                        <h1>We make it simple</h1>
+                        <div>
+                            professional service with quality and customer satisfaction
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END Down Header -->
+        </header>
+        <!-- END HEADER -->
+
+        <!-- MAIN -->
+        <main>
+            <!-- Call to Action -->
+            <div class="call-to-action">
+                <span class="i-margin-right">
+                    <i class="far fa-paper-plane"></i>
+                </span>
+                <span>
+                    Get a free quote online now!
+                </span>
+            </div>
+
+            <!-- Award Winning -->
+            <section class="flex-col-section" 
+            data-aos="fade-right" 
+            data-aos-once="true">
+                <div class="small-container">
+                    <span>
+                        Headache free
+                    </span>
+
+                    <h2>
+                        Award Winning <br>
+                        Moving Company
+                    </h2>
+
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt tempore, aliquam eos
+                        molestiae officiis
+                        possimus commodi ducimus nihil delectus aspernatur corrupti quaerat non explicabo.
+                        Asperiores.
+                    </p>
+
+                    <a class="btn" href="#">
+                        Read our testimonials
+                    </a>
+                </div>
+            </section>
+
+            <!-- Full-Service Solution -->
+            <section class="flex-row-section square-row">
+                <div class="container">
+                    <span data-aos="fade-right" data-aos-once="true">
+                        We are a professional
+                    </span>
+
+                    <h2 data-aos="fade-right" data-aos-once="true">
+                        Full-Service Solution
+                    </h2>
+
+                    <!-- Flex Row -->
+                    <div class="flex-row">
+                        <!-- Single Flex Item -->
+                        <div class="flex-item" data-aos="fade-right" data-aos-once="true">
+                            <!-- Gutter -->
+                            <div class="col-gutter">
+                                <!-- Inner -->
+                                <div class="col-inner">
+                                    <div class="img-box">
+                                        <img src="img/avada-movers-serviceonephoto-final-400x255.jpg" alt="Service">
+                                    </div>
+
+                                    <div class="col-text">
+                                        <h3>Two Man Teams</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus nesciunt
+                                            sed architecto quod autem
+                                            dolorem!
+                                        </p>
+
+                                        <a class="btn" href="#">
+                                            Read more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Flex Item -->
+                        <div class="flex-item" data-aos="fade-down" data-aos-once="true">
+                            <!-- Gutter -->
+                            <div class="col-gutter">
+                                <!-- Inner -->
+                                <div class="col-inner">
+                                    <div class="img-box">
+                                        <img src="img/avada-movers-servicetwophoto-final-400x255.jpg"
+                                            alt="Happy Couple">
+                                    </div>
+
+                                    <div class="col-text">
+                                        <h3>We Do All The Lifting</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus nesciunt
+                                            sed architecto quod autem
+                                            dolorem!
+                                        </p>
+
+                                        <a class="btn" href="#">
+                                            Read more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Flex Item -->
+                        <div class="flex-item" data-aos="fade-left" data-aos-once="true">
+                            <!-- Gutter -->
+                            <div class="col-gutter">
+                                <!-- Inner -->
+                                <div class="col-inner">
+                                    <div class="img-box">
+                                        <img src="img/avada-movers-servicethreephoto-final-400x255.jpg" alt="Street">
+                                    </div>
+
+                                    <div class="col-text">
+                                        <h3>Coast To Coast</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus nesciunt
+                                            sed architecto quod autem
+                                            dolorem!
+                                        </p>
+
+                                        <a class="btn" href="#">
+                                            Read more
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Move with Ease -->
+            <section class="small-jumbotron">
+                <!-- Layover -->
+                <div class="layover"></div>
+                <!-- Square Box -->
+                <div class="absolute-square" 
+                data-aos="fade-left" 
+                data-aos-once="true">
+                    <div class="square-intro">
+                        <span>We remove the headache from moving</span>
+                        <h2>Move With Ease</h2>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus nesciunt sed architecto quod
+                        autem
+                        dolorem! Lorem ipsum, bla bla blissimo non so che scrivere.
+                    </p>
+
+                    <a class="btn" href="#">
+                        Get a free quote now
+                    </a>
+                </div>
+            </section>
+
+            <!-- Testimonials -->
+            <section id="testimonials" class="flex-row-section circle-row">
+                <div class="container">
+                    <span data-aos="fade-right" data-aos-once="true">
+                        Happy customers
+                    </span>
+
+                    <h2 data-aos="fade-right" data-aos-once="true">
+                        Testimonials
+                    </h2>
+
+                    <!-- Flex Row -->
+                    <div class="flex-row">
+                        <!-- Single Flex Item -->
+                        <div class="flex-item" data-aos="fade-right" data-aos-once="true">
+                            <!-- Gutter -->
+                            <div class="col-gutter">
+                                <!-- Inner -->
+                                <div class="img-box">
+                                    <img src="img/avada-movers-johndoe-final-200x200.jpg" alt="Service">
+                                </div>
+
+                                <h3>John Doe</h3>
+                                <p>
+                                    <em>
+                                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus nesciunt
+                                        sed architecto quod
+                                        autem
+                                        dolorem!"
+                                    </em>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Single Flex Item -->
+                        <div class="flex-item" 
+                        data-aos="fade-down" 
+                        data-aos-once="true">
+                            <!-- Gutter -->
+                            <div class="col-gutter">
+                                <!-- Inner -->
+                                <div class="img-box">
+                                    <img src="img/avada-movers-janedoe-final-200x200.jpg" alt="Service">
+                                </div>
+
+                                <h3>Jane Doe</h3>
+                                <p>
+                                    <em>
+                                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus nesciunt
+                                        sed architecto quod
+                                        autem
+                                        dolorem!"
+                                    </em>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Single Flex Item -->
+                        <div class="flex-item" 
+                        data-aos="fade-left" 
+                        data-aos-once="true">
+                            <!-- Gutter -->
+                            <div class="col-gutter">
+                                <!-- Inner -->
+                                <div class="img-box">
+                                    <img src="img/avada-movers-johnsmith-final-200x200.jpg" alt="Service">
+                                </div>
+
+                                <h3>John Smith</h3>
+                                <p>
+                                    <em>
+                                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus nesciunt
+                                        sed architecto quod
+                                        autem
+                                        dolorem!"
+                                    </em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Button Read More -->
+                    <a class="btn" href="#">
+                        Read more testimonials
+                    </a>
+            </section>
+
+            <!-- Request a Free Quote -->
+            <section id="free-quote" class="flex-col-section">
+                <div class="small-container" 
+                data-aos="fade-right" 
+                data-aos-once="true">
+                    <h2>
+                        Request A Free Quote
+                    </h2>
+
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt tempore, aliquam eos
+                        molestiae officiis
+                        possimus commodi ducimus nihil delectus aspernatur corrupti quaerat non explicabo.
+                    </p>
+
+                    <a class="btn" href="#">
+                        Click here
+                    </a>
+                </div>
+            </section>
+        </main>
+        <!-- END MAIN -->
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <div class="left">
+                    <h3>About</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nisi sapiente cumque, laborum
+                        repellat perferendis doloribus quam. Omnis, ex? Eligendi quaerat doloribus nulla, iure
+                        architecto tempore reiciendis a ullam ut?
+                    </p>
+                    <!-- Logo -->
+                    <div class="logo">
+                        <img src="img/avada-movers-retinalogo.png" alt="Avada Movers logo">
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="footer-menu-list">
+                        <h3>{{footerMenuTitle_1}}</h3>
+                        <ul>
+                            <li v-for="item in footerMenu_1">
+                                <span>
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                                <a href="#">
+                                    {{ item }}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer-menu-list">
+                        <h3>{{footerMenuTitle_2}}</h3>
+                        <ul>
+                            <li v-for="item in footerMenu_2">
+                                <span>
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                                <a href="#">
+                                    {{ item }}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright and Legal Stuff -->
+            <div class="copy-legal">
+                <ul>
+                    <li v-for="stuff in copyAndLegal">
+                        <a href="#">
+                            {{stuff}}
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Social -->
+                <ul class="social-ul">
+                    <li v-for="social in socials">
+                        <a class="social-i" 
+                        :href="social.link"
+                        v-html="social.icon"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+        <div class="fixed-item">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="dist/app.js"></script>
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
