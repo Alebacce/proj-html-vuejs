@@ -38,6 +38,15 @@
 
     .img-box {
         border-bottom: $thick_gray_border;
+        overflow: hidden;
+        img {
+            transition: opacity .5s, transform .5s;
+
+            &:hover {
+                opacity: 0.9;
+                transform: scale(1.1);
+            }
+        }
     }
 }
 

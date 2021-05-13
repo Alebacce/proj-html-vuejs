@@ -59,7 +59,7 @@ i {
 .btn {
   display: inline-block;
   background-color: #1975c0;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   color: #ffffff;
   padding: 10px 25px;
@@ -74,12 +74,12 @@ i {
 
 h2 {
   color: #69bf14;
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 800;
 }
 
 p {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 25px;
 }
@@ -93,7 +93,7 @@ section {
   text-align: center;
 }
 section span {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 900;
   text-transform: uppercase;
   color: #afaeae;
@@ -115,7 +115,7 @@ section p {
   background-color: #262727;
   width: 40px;
   height: 30px;
-  font-size: 13px;
+  font-size: 14px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   position: fixed;
@@ -138,7 +138,7 @@ section p {
   align-items: center;
 }
 .header-up .call {
-  font-size: 12px;
+  font-size: 13px;
 }
 .header-up .social-ul li {
   display: inline-block;
@@ -146,7 +146,7 @@ section p {
   transition: transform 0.2s;
 }
 .header-up .social-ul li .social-i {
-  font-size: 13px;
+  font-size: 14px;
 }
 .header-up .social-ul li:hover {
   transform: scale(1.4);
@@ -180,7 +180,7 @@ section p {
   text-decoration: none;
   color: black;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 14px;
 }
 .header-down ul li a:hover {
   color: #69bf14;
@@ -200,12 +200,12 @@ section p {
   color: #262727;
 }
 .header-down .motto h1 {
-  font-size: 50px;
+  font-size: 55px;
   font-weight: 900;
   padding: 20px;
 }
 .header-down .motto div {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 900;
   text-transform: uppercase;
   color: #6b6b6b;
@@ -245,7 +245,7 @@ section p {
 .flex-row h3 {
   color: #1975c0;
   padding-bottom: 15px;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .square-row .col-inner {
@@ -253,6 +253,14 @@ section p {
 }
 .square-row .img-box {
   border-bottom: 15px solid #F2F5F8;
+  overflow: hidden;
+}
+.square-row .img-box img {
+  transition: opacity 0.5s, transform 0.5s;
+}
+.square-row .img-box img:hover {
+  opacity: 0.9;
+  transform: scale(1.1);
 }
 
 .col-gutter {
@@ -298,7 +306,7 @@ section p {
   color: #ffffff;
 }
 .small-jumbotron .absolute-square .btn {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 #testimonials {
@@ -335,7 +343,7 @@ footer .container h3 {
   margin-bottom: 20px;
   color: #262727;
   font-weight: 800;
-  font-size: 15px;
+  font-size: 16px;
 }
 footer .container .left {
   width: 40%;
@@ -381,7 +389,7 @@ footer .container .right ul li i {
 footer .container .right ul li a {
   text-decoration: none;
   color: black;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .copy-legal {
@@ -399,7 +407,7 @@ footer .container .right ul li a {
   text-decoration: none;
   color: black;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 13px;
   padding: 0 15px;
   border-left: 1px solid #ffffff;
 }
@@ -415,7 +423,7 @@ footer .container .right ul li a {
   margin-left: 15px;
   transition: transform 0.2s;
   border-left: none;
-  font-size: 14px;
+  font-size: 15px;
 }
 .copy-legal .social-i:hover {
   transform: scale(1.4);
