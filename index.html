@@ -62,14 +62,21 @@
                     <!-- Menu -->
                     <nav>
                         <ul>
-                            <li v-for="item in headerMenu">
-                                <a href="#">
-                                    {{item}}
+                            <li v-for="(item, index) in headerMenu">
+                                <a :href="item.link"
+                                @click="clicked(index)"
+                                :class="{'active': thisLink == index}">
+                                    {{item.name}}
                                 </a>
                             </li>
+
+                                <!-- <th>
+                                    <Button v-bind:class="{'white': !clicked, 'blue': clicked}" v-on:click="clicked = !clicked" />
+                                </th> -->
+
                             <li>
-                                <a class="btn" href="#">
-                                    {{headerMenuBtn}}
+                                <a class="btn" href="headerMenuBtn.link">
+                                    {{headerMenuBtn.name}}
                                 </a>
                             </li>
                         </ul>
@@ -103,7 +110,9 @@
                     <i class="far fa-paper-plane"></i>
                 </span>
                 <span>
-                    Get a free quote online now!
+                    <a href="#">
+                        Get a free quote online now!
+                    </a>
                 </span>
             </div>
 
@@ -382,12 +391,14 @@
                     <div class="footer-menu-list">
                         <h3>{{footerMenuTitle_1}}</h3>
                         <ul>
-                            <li v-for="item in footerMenu_1">
+                            <li v-for="(item, index) in footerMenu_1">
                                 <span>
-                                    <i class="fas fa-chevron-right"></i>
+                                    <i class="fas fa-chevron-right" :class="{'active': thisFooterLink1 == index}"></i>
                                 </span>
-                                <a href="#">
-                                    {{ item }}
+                                <a :href="item.link"
+                                @click="clickedFooter1(index)"
+                                :class="{'active': thisFooterLink1 == index}">
+                                    {{ item.name }}
                                 </a>
                             </li>
                         </ul>
@@ -397,12 +408,14 @@
                     <div class="footer-menu-list">
                         <h3>{{footerMenuTitle_2}}</h3>
                         <ul>
-                            <li v-for="item in footerMenu_2">
+                            <li v-for="(item, index) in footerMenu_2">
                                 <span>
-                                    <i class="fas fa-chevron-right"></i>
+                                    <i class="fas fa-chevron-right" :class="{'active': thisFooterLink2 == index}"></i>
                                 </span>
-                                <a href="#">
-                                    {{ item }}
+                                <a :href="item.link"
+                                @click="clickedFooter2(index)"
+                                :class="{'active': thisFooterLink2 == index}">
+                                    {{ item.name }}
                                 </a>
                             </li>
                         </ul>
@@ -414,8 +427,8 @@
             <div class="copy-legal">
                 <ul>
                     <li v-for="stuff in copyAndLegal">
-                        <a href="#">
-                            {{stuff}}
+                        <a :href="stuff.link">
+                            {{stuff.name}}
                         </a>
                     </li>
                 </ul>

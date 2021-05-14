@@ -48,19 +48,20 @@
     ul li {
         display: inline-block;
         margin-left: 30px;
-        &:first-child {
-            a {
-                color: $primary_color;
-            }
-        }
 
         a {
             @include a_style;
             font-weight: $f_weight_btn;
             font-size: $small-text;
+
+            &.active {
+                color: $primary_color;
+            }
+
             &:hover {
                 color: $primary_color;
             }
+
             &.btn {
                 color: $white_color;
             }

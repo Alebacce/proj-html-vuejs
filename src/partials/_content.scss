@@ -7,6 +7,11 @@
     text-transform: uppercase;
     cursor: pointer;
     
+        a {
+        @include a_style;
+        color: $white_color;
+        }
+
     &:hover {
         background-color: lighten($color: $secondary_color, $amount: 15%)
     }
@@ -59,7 +64,7 @@
 }
 
 .small-jumbotron {
-    height: $small_jumbotron_height;
+    padding: $small_jumbotron_height;
     @include just-flex;
     justify-content: flex-end;
     align-items: center;

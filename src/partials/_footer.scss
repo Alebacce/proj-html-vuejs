@@ -34,17 +34,7 @@ footer {
             .footer-menu-list {
                 width: max-content;
                 margin-right: 180px;
-                &:first-child {
-                        li {
-                            &:first-child {
-                                a,
-                                i {
-                                    color: $primary_color;
-                                }
-                            }
 
-                        }
-                }
                 &:last-child {
                     margin-right: 0;
                 }
@@ -54,21 +44,29 @@ footer {
                 li {
                     margin-bottom: $padding_20;
                     &:hover {
-                            a,
-                            i {
-                                color: $primary_color;
-                            }
+                        a,
+                        i {
+                            color: $primary_color;
+                        }
                     }
 
                     i {
                         font-size: 9px;
                         color: black;
                         margin-right: 3px;
+
+                        &.active {
+                                color: $primary_color;
+                        }
                     }
 
                     a {
                         @include a_style;
                         font-size: $small-text;
+
+                        &.active {
+                            color: $primary_color;
+                        }
                     }
                 }
 

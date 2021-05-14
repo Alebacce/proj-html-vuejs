@@ -173,14 +173,14 @@ section p {
   display: inline-block;
   margin-left: 30px;
 }
-.header-down ul li:first-child a {
-  color: #69bf14;
-}
 .header-down ul li a {
   text-decoration: none;
   color: black;
   font-weight: 600;
   font-size: 14px;
+}
+.header-down ul li a.active {
+  color: #69bf14;
 }
 .header-down ul li a:hover {
   color: #69bf14;
@@ -219,6 +219,11 @@ section p {
   font-size: 16px;
   text-transform: uppercase;
   cursor: pointer;
+}
+.call-to-action a {
+  text-decoration: none;
+  color: black;
+  color: #ffffff;
 }
 .call-to-action:hover {
   background-color: #3f9be6;
@@ -272,7 +277,7 @@ section p {
 }
 
 .small-jumbotron {
-  height: 600px;
+  padding: 120px 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -367,10 +372,6 @@ footer .container .right .footer-menu-list {
   width: max-content;
   margin-right: 180px;
 }
-footer .container .right .footer-menu-list:first-child li:first-child a,
-footer .container .right .footer-menu-list:first-child li:first-child i {
-  color: #69bf14;
-}
 footer .container .right .footer-menu-list:last-child {
   margin-right: 0;
 }
@@ -386,10 +387,16 @@ footer .container .right ul li i {
   color: black;
   margin-right: 3px;
 }
+footer .container .right ul li i.active {
+  color: #69bf14;
+}
 footer .container .right ul li a {
   text-decoration: none;
   color: black;
   font-size: 14px;
+}
+footer .container .right ul li a.active {
+  color: #69bf14;
 }
 
 .copy-legal {
